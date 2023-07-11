@@ -1,6 +1,19 @@
 
 def find_best_user(file_path):
-    pass #TODO
+    result = []
+    with open(file_path, 'r') as file:
+        for line in file:
+            fields = line.split(',')
+            str = fields[5]
+            print(str)
+            result.append(str)
+
+    print(result)
+    print(max(result))
+        # result = max(str)
+        # print(result)
+
+
 
 
 def test():
@@ -8,3 +21,8 @@ def test():
     print(result)
 
 test()
+
+
+
+#read python files and start from last column to add numbers and add to array
+# take max of array to find out the highest score
